@@ -1,2 +1,3 @@
 # Portfolio
-![website](Screenshot (287).png)
+![Screenshot(287).png](Screenshot(287).png)
+
