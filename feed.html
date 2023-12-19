@@ -4,39 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="feed.css" rel="stylesheet">
+    <title>Personal Website</title>
+    <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
 </head>
 <body>
-    
-    <form>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="fname" name="firstname" placeholder="enter your name..">
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="enter your mail-ID">
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="enter your contact no">
-          </div>
-          <div class="form-group">
-            <label for="rate">Rate:</label>
-            <input type="text" id="rate" name="rate" placeholder="give your ratings from scale 1-5">
-          </div>
-          <div class="form-group">
-            <label for="ref">would you refer this to others:</label>
-            <input type="text" id="ref" name="ref" placeholder="Y/N">
-          </div>
-        <div class="form-group">
-          <label for="feedback">Feedback:</label>
-          <textarea id="feedback" name="feedback" placeholder=""></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    
-      
+
+    <div class="container">
+        <form class="feedback-form">
+            <h1>Feedback Form</h1>
+
+            <div class="form-group">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name..">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your mail-ID">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your contact no">
+            </div>
+
+            <div class="form-group">
+                <label for="rate">Rate:</label>
+                <input type="text" id="rate" name="rate" placeholder="Give your ratings from scale 1-5">
+            </div>
+
+            <div class="form-group">
+                <label for="ref">Would you refer this to others:</label>
+                <input type="text" id="ref" name="ref" placeholder="Y/N">
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Write your feedback here..."></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
 </body>
 </html>
