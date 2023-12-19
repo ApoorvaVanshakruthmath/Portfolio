@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>personal website</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+   
+<div class="modal" id="helpModal">
+    <div class="modal-content help-modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="modal-title">Help Section</h2>
+        <p class="modal-intro">Welcome to the help section! If you have any questions or need assistance, feel free to reach out to us.</p>
+  
+        <h3 class="modal-subtitle">Frequently Asked Questions (FAQs)</h3>
+        <ul class="modal-list">
+            <li><strong class="list-question">Q: How do I submit feedback?</strong><br>A: Use the feedback form on the main page and fill in the required details.</li>
+            <li><strong class="list-question">Q: Can I edit my submitted feedback?</strong><br>A: Unfortunately, once submitted, feedback cannot be edited. Please double-check before submitting.</li>
+            <!-- Add more FAQ items as needed -->
+        </ul>
+  
+        <h3 class="modal-subtitle">Contact Information</h3>
+        <p class="modal-text">If you need further assistance, you can contact us at:</p>
+        <p class="modal-text">Email: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p class="modal-text">Phone: (555) 123-4567</p>
+  
+        <!-- Add more helpful information as needed -->
+    </div>
+  </div>
+  
+  
+  
+    <script>
+        // JavaScript to handle modal functionality
+        const helpLink = document.getElementById('helpLink');
+        const helpModal = document.getElementById('helpModal');
+        const closeModal = document.getElementById('closeModal');
+  
+        helpLink.addEventListener('click', () => {
+            helpModal.style.display = 'block';
+        });
+  
+        closeModal.addEventListener('click', () => {
+            helpModal.style.display = 'none';
+        });
+  
+        window.addEventListener('click', (event) => {
+            if (event.target === helpModal) {
+                helpModal.style.display = 'none';
+            }
+        });
+    </script>
+    </body>
+    </html>
